@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mahjong</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- 今はここで呼び出すが、おきくなったらモジュール化する（というか一時的にやっているが、モジュール化しよう。） -->
+    <script src="./ts/Data/HandPattern.js"></script>
+    <script src="./ts/Data/allHand.js"></script>
+    <script src="./ts/Controller/controller.js"></script>
+    <script src="./ts/Model/model.js"></script>
+    <script src="./ts/View/script.js"></script>
+  </head>
+  <body>
+    <form onsubmit="displayData(event)">
+      <label for="type">系統</label>
+      <select name="typeOfHand" id="type" multiple>
+        <option value="run">順子系</option>
+        <option value="triple">刻子系</option>
+        <option value="dye">染め手系</option>
+        <option value="headAndOld">1・9系</option>
+      </select>
+
+      <button type="submit">送信</button>
+    </form>
+  </body>
+</html>
