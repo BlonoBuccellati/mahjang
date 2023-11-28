@@ -110,7 +110,7 @@ function createAllHand() {
     2,
     2
     // (handOfTriple = HandOfTriple.OverThreeSet)
-    // (handOfDyed = HandOfDyed.NeedThree) これは不要？
+    // (handOfDyed = HandOfDyed.NeedThree) これは不要？aaa
   );
   allHandList.push(ThreeColorTriple);
 
